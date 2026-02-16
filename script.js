@@ -8,7 +8,7 @@ const inputPage = document.getElementById('inputPage');
 const cardPage = document.getElementById('cardPage');
 
 const cardImage = new Image();
-cardImage.src = 'New-Year.jpg';
+cardImage.src = 'Ramadan-Kareem.jpg';
 
 function drawCard(name = '') {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -44,7 +44,7 @@ generateBtn.onclick = () => {
 
 downloadBtn.onclick = () => {
     const link = document.createElement('a');
-    link.download = 'New-Year.jpg';
+    link.download = 'Ramadan-Kareem.jpg';
     link.href = canvas.toDataURL('image/jpeg');
     link.click();
 };
